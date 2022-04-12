@@ -5296,6 +5296,7 @@ article.content-box {
         border: #a0a0a0 solid 1px;
         padding: 12px;
         position: relative;
+        min-height: 140px;
 
         @include screen-md-pad {
             align-items: center;
@@ -5303,6 +5304,7 @@ article.content-box {
             align-items: inherit;
             border: none;
             padding: 0;
+            min-height: auto;
         }
 
         &:before {

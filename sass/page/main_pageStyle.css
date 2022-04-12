@@ -3801,14 +3801,16 @@ article.content-box .otherArticle {
     align-items: flex-start;
     border: #a0a0a0 solid 1px;
     padding: 12px;
-    position: relative; }
+    position: relative;
+    min-height: 140px; }
     @media (min-width: 768px) {
       #memberCoupon .coupon-item {
         align-items: center;
         flex-direction: inherit;
         align-items: inherit;
         border: none;
-        padding: 0; } }
+        padding: 0;
+        min-height: auto; } }
     #memberCoupon .coupon-item:before {
       content: '';
       display: inline-block;
