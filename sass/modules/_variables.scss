@@ -1,0 +1,68 @@
+@charset "utf-8";
+// ======  變數設定  ======
+
+// ======  01 color  ======
+// grey  (灰色系)
+$color-grey1: #666666;
+$color-grey2: #232323;
+
+// color of main/sub  (主輔色)
+$color-main: #e65514;
+
+// 01-4. hightlight color (其他強調裝飾色)
+$color-light1: #233039;
+$color-light2: #5e381c;
+$color-light3: #d7a053;
+$color-light4: #bf0909;
+
+// color common use  (常用顏色-白 / 黑)
+$color-white: #ffffff;
+$color-black: #000000;
+
+// other color   (基本元件的固定顏色-字體 / 連結)
+$color-font: #565656;
+
+
+// ======  02 Font Setting  ======
+// 02-1 font basic setting
+$font-family: 'Noto Sans TC','微軟正黑體','Microsoft JhengHei',sans-serif;
+$font-size-base: 1rem;
+$letter-space: 0.25px;
+
+// 02-2 line-height
+$line-height-base: 1.5;
+$line-height-lg: 1.75;
+$line-height-md: 1.375;
+$line-height-sm: 1.25;
+$line-height-xs: 1.125;
+
+// 02-3 font size
+$font-size-s38: $font-size-base * 2.375; //38px
+$font-size-s34: $font-size-base * 2.125; //34px
+$font-size-s30: $font-size-base * 1.875; //30px
+$font-size-s28: $font-size-base * 1.75; //28px
+$font-size-s26: $font-size-base * 1.625; //26px
+$font-size-s24: $font-size-base * 1.5; //24px
+$font-size-s22: $font-size-base * 1.375; //22px
+$font-size-s20: $font-size-base * 1.25; //20px
+$font-size-s18: $font-size-base * 1.125; //18px
+$font-size-s17: $font-size-base * 1.0625; //17px
+$font-size-s15: $font-size-base * 0.9375; //15px
+$font-size-s14: $font-size-base * 0.875; //14px
+$font-size-s13: $font-size-base * 0.8125; //13px
+$font-size-s12: $font-size-base * 0.75; //12px
+
+
+
+// ======  03 Spacer ex:map-get($spacers, 1);  ======
+// 1=10px,2=12px,3=15px,4=20px,5=25px,6=30px,
+$spacer: 1rem;    
+$spacers: (
+  0: 0,
+  1: ($spacer * .625),
+  2: ($spacer * .75), 
+  3: ($spacer * 0.9375),
+  4: ($spacer * 1.25),  
+  5: ($spacer * 1.5625),
+  6: ($spacer * 1.875),
+);

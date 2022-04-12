@@ -1,0 +1,717 @@
+@charset "utf-8";
+@import "../modules/mixin";
+@import "../modules/variables";
+@import "../modules/breakpoint";
+
+//首頁頁首
+.home-header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(255, 255, 255, 0.6);
+    z-index: 100;
+
+    .navbar,
+    .navbar-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    >.navbar {
+        padding: 10px 15px;
+
+        @include screen-lg-pad {
+            padding: 12px 30px;
+        }
+
+        @include screen-xl-desktop {
+            padding: 12px 60px;
+        }
+    }
+
+    .logo {
+        img {
+            height: 38px;
+
+            @include screen-sm-mobile {
+                height: 50px;
+            }
+
+            @include screen-lg-pad {
+                height: 59px;
+            }
+        }
+    }
+
+    .signupModal {
+        @extend %ul;
+
+        .navbar-item {
+            margin-left: map-get($spacers, 1);
+
+            @include screen-sm-mobile {
+                margin-left: map-get($spacers, 3);
+            }
+        }
+
+        img {
+            height: 24px;
+            margin-bottom: 3px;
+
+            @include screen-sm-mobile {
+                height: 20px;
+                margin-right: 4px;
+                margin-bottom: 0px;
+            }
+
+            @include screen-lg-pad {
+                height: 24px;
+            }
+        }
+
+        a {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            color: $color-font;
+            font-weight: bold;
+            font-size: $font-size-s13;
+
+            @include screen-sm-mobile {
+                border: #ffffff solid 3px;
+                @include border-radius(50px);
+                padding: 5px 10px;
+                font-size: $font-size-base;
+                flex-direction: inherit;
+                color: $color-white;
+            }
+
+            &:hover {
+                background: transparent;
+
+                @include screen-sm-mobile {
+                    background: $color-main;
+                }
+            }
+        }
+    }
+}
+
+//會員登入
+#modalSignin {
+    @include box-shadow(0px 8px 16px rgba(0, 0, 0, 0.15));
+    @include border-radius(10px);
+    background: #ffffff;
+    width: 90%;
+    max-width: 350px;
+    padding: 15px;
+
+    @include screen-sm-mobile {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .modal-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 0 20px 0;
+
+        h2 {
+            font-size: $font-size-s20;
+            font-weight: 500;
+            color: $color-black;
+
+            @include screen-sm-mobile {
+                font-size: $font-size-s22;
+            }
+        }
+
+        .btn-close {
+            img {
+                width: 13px;
+                height: 21px;
+            }
+        }
+    }
+
+    .form-group {
+        margin: 0 0 15px 0;
+
+        input {
+            border: 1px solid #ced4da;
+            @include border-radius(8px);
+            padding: 8px 10px 8px 35px;
+            font-size: $font-size-base;
+            width: 100%;
+            min-height: 40px;
+        }
+
+        .accountId,
+        .password {
+            background-repeat: no-repeat;
+            background-position: 12px center;
+            font-weight: 300;
+            background-size: 16px;
+        }
+
+        .accountId {
+            background-image: url("data:image/svg+xml,%3Csvg aria-hidden='true' data-prefix='fas' data-icon='user' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512' class='svg-inline--fa fa-user fa-w-14' width='448' height='512'%3E%3Cpath fill='%23000000' d='M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z'/%3E%3C/svg%3E");
+        }
+
+        .password {
+            background-image: url("data:image/svg+xml,%3Csvg aria-hidden='true' data-prefix='fas' data-icon='lock-alt' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512' class='svg-inline--fa fa-lock-alt fa-w-14' width='448' height='512'%3E%3Cpath fill='%23000000' d='M400 224h-24v-72C376 68.2 307.8 0 224 0S72 68.2 72 152v72H48c-26.5 0-48 21.5-48 48v192c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V272c0-26.5-21.5-48-48-48zM264 392c0 22.1-17.9 40-40 40s-40-17.9-40-40v-48c0-22.1 17.9-40 40-40s40 17.9 40 40v48zm32-168H152v-72c0-39.7 32.3-72 72-72s72 32.3 72 72v72z'/%3E%3C/svg%3E");
+        }
+
+        .btn-login {
+            width: 100%;
+            @include border-radius(8px);
+            border: none;
+            padding: 9px;
+            background: $color-main;
+            color: $color-white;
+            cursor: pointer;
+            font-size: $font-size-base;
+
+            &:hover {
+                background: #d04000;
+            }
+        }
+    }
+
+    .form-btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a {
+            font-size: $font-size-base;
+            color: $color-black;
+        }
+
+        .forgetPwd {
+            color: #9f0000;
+            text-decoration: underline;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        .singUp {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.fade {
+    @include opacity(0);
+}
+
+.modal {
+    position: fixed;
+    z-index: 100;
+    left: 50%;
+    top: 10%;
+    @include transform(translate(-50%, 0));
+}
+
+.hide {
+    display: none;
+}
+
+.fade.in {
+    @include opacity(1);
+}
+
+.modal.fade {
+    top: -25%;
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    background: #000000;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-backdrop.fade.in {
+    @include opacity(0.5);
+}
+
+.home-body {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top center;
+}
+
+//歡迎列
+.hero {
+    padding-top: 60px;
+    padding-bottom: 245px;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: rgba(255, 255, 255, 0.3);
+
+    @include screen-sm-mobile {
+        padding-top: 70px;
+        background-blend-mode: inherit;
+        background-color: transparent;
+    }
+
+    @include screen-lg-pad {
+        padding-top: 83px;
+    }
+
+    .container {
+        padding: 15% 15px;
+
+        @include screen-lg-pad {
+            height: 100vh;
+            padding: 0 15px;
+        }
+
+        @include screen-xl-desktop {
+            padding: 0;
+        }
+    }
+
+    .text {
+        width: 100%;
+        display: inline-block;
+
+        @include screen-md-pad {
+            max-width: 390px;
+        }
+
+        h1 {
+            color: $color-main;
+            line-height: $line-height-md;
+            font-size: $font-size-s28;
+            margin-bottom: map-get($spacers, 1);
+
+            @include screen-md-pad {
+                margin-bottom: map-get($spacers, 5);
+                font-size: $font-size-s30;
+            }
+        }
+
+        h3 {
+            font-size: $font-size-s24;
+            margin-bottom: map-get($spacers, 3);
+
+            @include screen-md-pad {
+                font-size: $font-size-s26;
+            }
+        }
+
+        p {
+            background: rgba(255, 255, 255, 0.85);
+            @include border-radius(10px);
+            padding: 15px;
+
+            @include screen-sm-mobile {
+                background: transparent;
+                @include border-radius(0px);
+                padding: 0;
+            }
+        }
+    }
+}
+
+.idea,
+.service,
+.partner {
+    .title {
+        font-size: $font-size-s24;
+        color: $color-black;
+        text-align: center;
+
+        @include screen-md-pad {
+            font-size: $font-size-s28;
+        }
+
+        @include screen-lg-pad {
+            font-size: $font-size-s30;
+        }
+    }
+}
+
+//企業核心價值
+.idea {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    margin-top: -245px;
+
+    .container {
+        padding: 80px 15px 30px 15px;
+
+        @include screen-md-pad {
+            padding: 80px 15px 60px 15px;
+        }
+
+        @include screen-xl-desktop {
+            padding: 80px 0 100px 0;
+        }
+    }
+
+    .position-absolute {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right bottom;
+
+        @include screen-md-pad {
+            background-size: 40%;
+        }
+    }
+
+    .title {
+        margin-bottom: map-get($spacers, 6);
+    }
+
+    .feature {
+        .card {
+            width: 100%;
+            text-align: center;
+
+            @include screen-md-pad {
+                width: calc((100% / 3) - 15px);
+            }
+
+            @include screen-xl-desktop {
+                width: calc((100% / 3) - 80px);
+            }
+        }
+
+        .card-icon {
+            @include screen-lg-pad {
+                margin-bottom: map-get($spacers, 3);
+            }
+
+            img {
+                width: 80px;
+                height: 80px;
+
+                @include screen-lg-pad {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        }
+
+        .text {
+            margin-bottom: map-get($spacers, 2);
+
+            .tw {
+                font-size: $font-size-s24;
+                color: $color-black;
+                margin-bottom: 5px;
+
+                @include screen-lg-pad {
+                    font-size: $font-size-s30;
+                }
+            }
+
+            .en {
+                color: $color-grey1;
+                font-weight: normal;
+                letter-spacing: 0.5px;
+            }
+        }
+
+        h3 {
+            font-size: $font-size-s20;
+            color: $color-main;
+            font-weight: inherit;
+            margin-bottom: map-get($spacers, 1);
+
+            @include screen-lg-pad {
+                font-size: $font-size-s24;
+                margin-bottom: map-get($spacers, 6);
+            }
+        }
+
+        p {
+            text-align: center;
+            color: $color-grey2;
+
+            @include screen-md-pad {
+                text-align: left;
+            }
+        }
+    }
+}
+
+//服務內容
+.service {
+    padding: 60px 15px 30px 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include screen-md-pad {
+        padding: 90px 15px 70px 15px;
+    }
+
+    @include screen-xl-desktop {
+        padding: 90px 0 70px 0;
+    }
+
+    &:before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        background-image: url(../../images/home/icon-arrow.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        top: 0;
+        left: 50%;
+        @include transform(translateX(-50%));
+        width: 230px;
+        height: 34px;
+
+        @include screen-md-pad {
+            width: 350px;
+            height: 52px;
+        }
+    }
+
+    .title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: map-get($spacers, 3);
+
+        @include screen-lg-pad {
+            margin-bottom: map-get($spacers, 6);
+        }
+
+        &:before,
+        &:after {
+            content: '';
+            display: inline-block;
+            background-image: url(../../images/home/title-line.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            margin: 0 15px;
+            width: 50px;
+            height: 14px;
+
+            @include screen-md-pad {
+                width: 65px;
+                height: 18px;
+            }
+        }
+    }
+
+    .rounded {
+        background: rgba(255, 255, 255, 0.75);
+        @include border-radius(18px);
+        padding: map-get($spacers, 3);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        @include screen-md-pad {
+            padding: map-get($spacers, 6);
+        }
+
+        .card {
+            width: 100%;
+
+            @include screen-md-pad {
+                width: calc((100% / 2) - 15px);
+            }
+
+            @include screen-lg-pad {
+                width: calc((100% / 2) - 50px);
+            }
+        }
+
+        .card+.card {
+            margin-top: map-get($spacers, 3);
+
+            @include screen-md-pad {
+                margin-top: map-get($spacers, 0);
+            }
+        }
+
+        .card+.card+.card {
+            @include screen-md-pad {
+                margin-top: map-get($spacers, 6);
+            }
+
+            @include screen-lg-pad {
+                margin-top: 40px;
+            }
+        }
+
+        .card-icon {
+            img {
+                width: 50px;
+                height: 50px;
+
+                @include screen-md-pad {
+                    width: 65px;
+                    height: 65px;
+                }
+            }
+        }
+
+        h3 {
+            font-size: $font-size-s20;
+            color: $color-light1;
+            margin-left: map-get($spacers, 1);
+
+            @include screen-md-pad {
+                font-size: $font-size-s24;
+            }
+        }
+
+        p {
+            color: $color-grey2;
+            letter-spacing: normal;
+            margin-top: 5px;
+
+            @include screen-md-pad {
+                margin-top: map-get($spacers, 1);
+            }
+        }
+    }
+}
+
+//合作夥伴
+.partner {
+    padding: 35px 15px;
+
+    @include screen-md-pad {
+        padding: 50px 15px;
+    }
+
+    @include screen-xl-desktop {
+        padding: 60px 0 50px 0;
+    }
+
+    .title {
+        margin-bottom: map-get($spacers, 3);
+
+        @include screen-lg-pad {
+            margin-bottom: map-get($spacers, 6);
+        }
+    }
+
+    .partner-slider {
+
+        .slick-prev,
+        .slick-next {
+            font-size: 0;
+            border: none;
+            background: transparent;
+            padding: 0;
+            position: absolute;
+            z-index: 100;
+            cursor: pointer;
+            top: 50%;
+            @include transform(translateY(-50%));
+
+            &:before {
+                @extend %fal;
+                color: rgba(102, 102, 102, 0.4);
+                font-size: $font-size-s24;
+            }
+        }
+
+        .slick-prev {
+            left: 0;
+
+            &:before {
+                content: '\f053'
+            }
+        }
+
+        .slick-next {
+            right: 0;
+
+            &:before {
+                content: '\f054'
+            }
+        }
+
+        .partner__img {
+            padding: 3px;
+
+            @include screen-md-pad {
+                padding: 10px;
+            }
+        }
+    }
+}
+
+//聯絡我們
+.contact {
+    padding: 15% 15px;
+
+    @include screen-lg-pad {
+        padding: 15% 0;
+    }
+
+    .text {
+        text-align: center;
+        color: $color-white;
+
+        h2 {
+            font-size: $font-size-s24;
+            margin-bottom: map-get($spacers, 3);
+
+            @include screen-lg-pad {
+                font-size: $font-size-s34;
+                margin-bottom: map-get($spacers, 6);
+            }
+        }
+
+        h3 {
+            font-size: $font-size-s20;
+            margin-bottom: map-get($spacers, 6);
+
+            @include screen-lg-pad {
+                font-size: $font-size-s30;
+                margin-bottom: 60px;
+            }
+        }
+    }
+
+    .btn {
+        @extend %btn;
+        background: $color-main;
+        color: $color-white;
+        padding: 8px 30px;
+        display: inline-block;
+        font-weight: bold;
+
+        @include screen-lg-pad {
+            padding: 10px 40px;
+        }
+
+        &:hover {
+            background: transparent;
+        }
+    }
+}

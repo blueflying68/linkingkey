@@ -1,0 +1,37 @@
+@charset "utf-8";
+// ====== RWD斷點設定  ======
+@mixin screen-xs-mobile {
+    @media (min-width: 0px) {
+        @content;
+    }
+}
+
+@mixin screen-sm-mobile {
+    @media (min-width: 576px) {
+        @content;
+    }
+}
+
+@mixin screen-md-pad {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin screen-lg-pad {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin screen-xl-desktop {
+    @media (min-width: 1280px) {
+        @content;
+    }
+}
+
+@mixin screen-xxl-desktop {
+    @media (min-width: 1400px) {
+        @content;
+    }
+}

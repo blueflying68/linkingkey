@@ -1,0 +1,615 @@
+@charset "utf-8";
+@import "../modules/mixin";
+@import "../modules/variables";
+@import "../modules/breakpoint";
+
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+
+body {
+    color: $color-grey2;
+    font-weight: normal;
+}
+
+//頁首
+.member-header {
+    padding: 10px 15px;
+
+    @include screen-lg-pad {
+        padding: 12px 30px;
+    }
+
+    @include screen-xl-desktop {
+        padding: 12px 60px;
+    }
+
+    .logo {
+        img {
+            height: 45px;
+
+            @include screen-sm-mobile {
+                height: 50px;
+            }
+
+            @include screen-lg-pad {
+                height: 59px;
+            }
+        }
+    }
+}
+
+//尊享會員
+.text-desc {
+    background: $color-main;
+    color: $color-white;
+    text-align: center;
+    padding: 12px 15px;
+    line-height: 1.4;
+}
+
+.vipMember {
+    position: relative;
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: url(../../images/member/member-plan-bg1.png) center no-repeat;
+        background-size: cover;
+        top: 0;
+    }
+
+    ul {
+        @extend %ul;
+    }
+
+    &__plan {
+        background: url(../../images/member/member-plan-bg2.png) top center no-repeat;
+        background-size: cover;
+        position: relative;
+        padding: 30px 15px;
+
+        @include screen-lg-pad {
+            padding: 60px 0;
+        }
+
+        .d-flex {
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+            @include screen-lg-pad {
+                align-items: flex-end;
+            }
+        }
+
+        &-txt {
+            color: $color-light2;
+            font-size: $font-size-s34;
+            width: 250px;
+            font-family: 'Marcellus SC', serif;
+            width: 100%;
+            text-align: center;
+            line-height: 1;
+            margin: 0 0 15px 0;
+
+            @include screen-sm-mobile {
+                line-height: 1.6;
+                margin: 0;
+            }
+
+            @include screen-lg-pad {
+                width: min-content;
+                text-align: left;
+            }
+        }
+
+        &-benefit {
+            margin: 0 0 15px 0;
+
+            @include screen-sm-mobile {
+                padding: 0 40px;
+                margin: 0;
+            }
+
+            h1 {
+                color: #e65514;
+                font-size: $font-size-s30;
+                font-weight: 600;
+                letter-spacing: 4px;
+                margin: 0 0 5px 0;
+
+                @include screen-sm-mobile {
+                    margin: 0 0 15px 0;
+                }
+
+                @include screen-lg-pad {
+                    font-size: $font-size-s38;
+                    margin: 0 0 25px 0;
+                }
+            }
+
+            ul {
+                font-weight: 400;
+                color: $color-grey2;
+            }
+
+            li {
+                margin: 0 0 5px 0;
+                display: flex;
+                align-items: flex-end;
+                font-size: $font-size-s18;
+
+                @include screen-sm-mobile {
+                    margin: 0 0 10px 0;
+                }
+
+                @include screen-lg-pad {
+                    margin: 0 0 15px 0;
+                    font-size: $font-size-base;
+                }
+
+                &:before {
+                    content: '';
+                    display: inline-block;
+                    background: url(../../images/member/icon-crown.svg) 0 0 no-repeat;
+                    background-size: 100%;
+                    width: 45px;
+                    height: 29px;
+                    margin: 0 10px 0 0;
+                }
+            }
+        }
+
+        &-price {
+            @include border-radius(50%);
+            background: $color-white;
+            @include box-shadow(4px 4px 13px rgba(0, 0, 0, 0.75));
+            width: 185px;
+            height: 185px;
+            overflow: hidden;
+
+            @include screen-sm-mobile {
+                width: 215px;
+                height: 215px;
+            }
+
+            h2 {
+                background: #e65514;
+                color: $color-white;
+                text-align: center;
+                padding: 20px 0 10px 0;
+                font-weight: 500;
+                font-size: $font-size-s24;
+                letter-spacing: 4px;
+
+                @include screen-sm-mobile {
+                    font-size: $font-size-s30;
+                }
+            }
+
+            .content {
+                text-align: center;
+
+                span {
+                    display: block;
+                }
+
+                .price {
+                    color: $color-light4;
+                    font-weight: 800;
+                    font-size: $font-size-s24;
+                    padding: 10px 0;
+
+                    @include screen-sm-mobile {
+                        font-size: $font-size-s28;
+                        padding: 13px 0;
+                    }
+                }
+
+                .txt {
+                    color: $color-grey2;
+                    line-height: 1.5;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+
+    &__apply {
+        background: $color-light1;
+        color: $color-white;
+        padding: 75px 15px 15px 15px;
+
+        @include screen-sm-mobile {
+            padding: 75px 15px 30px 15px;
+        }
+
+        @include screen-lg-pad {
+            padding: 90px 0 60px 0;
+        }
+
+        &:before {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            background-image: url(../../images/home/icon-arrow.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            top: 0;
+            left: 50%;
+            @include transform(translateX(-50%));
+            width: 230px;
+            height: 34px;
+
+            @include screen-md-pad {
+                width: 350px;
+                height: 52px;
+            }
+        }
+
+        h3 {
+            text-align: center;
+            font-size: $font-size-s24;
+            margin: 0 0 30px 0;
+            letter-spacing: 4px;
+
+            @include screen-lg-pad {
+                font-size: $font-size-s30;
+            }
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+
+            @include screen-sm-mobile {
+                flex-direction: inherit;
+                align-items: inherit;
+            }
+        }
+
+        li {
+            position: relative;
+            margin: 0 0 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+
+            @include screen-sm-mobile {
+                display: block;
+                padding: 0 60px 0 15px;
+            }
+
+            @include screen-md-pad {
+                margin: 0;
+            }
+
+            img {
+                max-width: 120px;
+
+                @include screen-lg-pad {
+                    max-width: 150px;
+                }
+            }
+
+            span {
+                display: block;
+                text-align: center;
+                padding: 8px 0;
+                font-size: $font-size-s18;
+
+                @include screen-lg-pad {
+                    font-size: $font-size-s22;
+                }
+            }
+
+            &:after {
+                content: '';
+                display: block;
+                background: url(../../images/member/icon-arrow.svg) 0 0 no-repeat;
+                background-size: 100%;
+                width: 26px;
+                height: 23px;
+                @include transform(rotate(90deg));
+
+                @include screen-sm-mobile {
+                    width: 45px;
+                    height: 39px;
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    @include transform(translateY(-50%));
+                    margin-top: -20px;
+                    transform: inherit;
+                }
+            }
+
+            &:first-of-type {
+                @include screen-md-pad {
+                    padding: 0 60px 0 0;
+                }
+            }
+
+            &:last-of-type {
+                @include screen-md-pad {
+                    padding: 0 0 0 15px;
+                }
+
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+//申請表
+.member-form {
+    padding: 30px 15px;
+    position: relative;
+    overflow: hidden;
+
+    @include screen-lg-pad {
+        padding: 60px 15px;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        background: url(../../images/member/form-bg.svg) 0 0 no-repeat;
+        background-size: 100%;
+        width: 500px;
+        height: 363px;
+        right: -110px;
+        top: 130px;
+        z-index: -1;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: $font-size-s24;
+        letter-spacing: 4px;
+        margin: 0 0 15px 0;
+
+        @include screen-lg-pad {
+            font-size: $font-size-s30;
+        }
+    }
+
+    .form-title {
+        border-bottom: $color-light1 solid 3px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        margin: 0 0 15px 0;
+
+        span {
+            color: $color-white;
+            display: inline-block;
+            background: url(../../images/member/member-form-title-bg.svg) 0 0 no-repeat;
+            background-size: 100%;
+            width: 180px;
+            height: 43px;
+            margin: 3px 0 0 0;
+            line-height: 48px;
+            padding: 0 0 0 26px;
+        }
+    }
+
+    &__box {
+        max-width: 900px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    form {
+        width: 100%;
+
+        @include screen-md-pad {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+    }
+
+    &__group {
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0 0 20px 0;
+
+        @include screen-md-pad {
+            padding: 15px 0;
+            margin: 0;
+        }
+
+        .col-form-label {
+            width: 100%;
+            margin: 0 0 8px 0;
+
+            @include screen-md-pad {
+                margin: 0 15px 0 0;
+                text-align: right;
+                width: auto;
+            }
+        }
+
+        .required {
+            &:after {
+                content: '*';
+                display: inline-block;
+                color: #ff0000;
+                font-size: $font-size-s22;
+                vertical-align: text-bottom;
+            }
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="phone"],
+        input[type="email"],
+        select {
+            border: $color-grey1 solid 2px;
+            @include border-radius(20px);
+            height: 40px;
+            width: 100%;
+        }
+
+        input[type="date"] {
+            @include screen-sm-mobile {
+                width: 50%;
+            }
+        }
+
+        input {
+            padding: 5px 15px 7px 15px;
+        }
+
+        input[type="date"],
+        select {
+            padding: 5px 10px;
+        }
+
+        .col-form-input {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            flex: 1;
+        }
+
+        .form-select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background: url(../../images/member/sel-arrow.png) 97% center no-repeat;
+            background-size: 18px 13px;
+            padding: 5px 40px 5px 15px;
+            cursor: pointer;
+
+            @include screen-md-pad {
+                background: url(../../images/member/sel-arrow.png) 92% center no-repeat;
+                background-size: 18px 13px;
+                width: calc((100% / 3) - 8px);
+            }
+        }
+
+        .form-select+.form-select {
+            margin: 10px 0 0 0;
+
+            @include screen-md-pad {
+                margin: 0 0 0 8px;
+            }
+        }
+
+        .full-select {
+            .form-select {
+                width: 100%;
+                background-position-x: 97%;
+            }
+        }
+
+        .form-check {
+            display: flex;
+            align-items: center;
+            margin: 0 15px 12px 0;
+
+            @include screen-sm-mobile {
+                margin: 0 15px 0 0;
+            }
+        }
+
+        input[type="radio"] {
+            border: $color-grey1 solid 2px;
+            width: 20px;
+            height: 20px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            -webkit-print-color-adjust: exact;
+            color-adjust: exact;
+            @include border-radius(50%);
+            padding: 0;
+            margin: 0 8px 0 0;
+        }
+
+        .form-check-input:checked[type=radio] {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
+        }
+
+        .form-check-input:checked {
+            background-color: $color-main;
+            border-color: $color-main;
+        }
+
+        .txt-ind {
+            display: block;
+            width: 100%;
+            color: $color-grey1;
+            padding: 8px 0 0 5px;
+        }
+
+        .otherInput {
+            width: 180px !important;
+            margin: 0 0 0 8px;
+        }
+    }
+
+    &__btn {
+        text-align: center;
+        padding: 20px 0;
+
+        button,
+        a {
+            color: $color-white;
+            @include border-radius(20px);
+            font-size: $font-size-base;
+            line-height: 1;
+            padding: 12px 40px;
+            margin: 0 0 10px 0;
+            width: 100%;
+
+            @include screen-sm-mobile {
+                width: auto;
+                margin: 0 10px;
+            }
+        }
+
+        button {
+            border: none;
+            background: $color-light1;
+            cursor: pointer;
+
+            &:hover {
+                background: #111b21;
+            }
+        }
+
+        a {
+            background: $color-main;
+            display: inline-block;
+
+            &:hover {
+                background: #d04000;
+            }
+        }
+    }
+
+    &__text {
+        text-align: center;
+        line-height: 1.5;
+
+        br {
+            display: none;
+
+            @include screen-sm-mobile {
+                display: inline-block;
+            }
+        }
+    }
+}
