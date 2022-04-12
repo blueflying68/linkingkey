@@ -1,0 +1,573 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>國際化高階商務平台</title>
+    <!--Web default meta-->
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <!--base css-->
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/animate_min.css" rel="stylesheet" />
+    <link href="sass/modules/_base.css" rel="stylesheet" />
+    <!--font icon css-->
+    <link href="vendors/fontawesome/css/fontawesome-pro-all.css" rel="stylesheet" />
+    <link href="vendors/fontawesome/css/fontawesome-pro-web.css" rel="stylesheet" />
+    <!--vendors css-->
+    <link href="vendors/slick/slick.css" rel="stylesheet" />
+    <link href="vendors/perfectScrollbar/perfect-scrollbar.css" rel="stylesheet" />
+    <!--page css-->
+    <link href="sass/page/footer.css" rel="stylesheet" />
+    <link href="sass/page/mainHeader.css" rel="stylesheet" />
+    <link href="sass/page/mainStyle.css" rel="stylesheet" />
+</head>
+
+<body id="page-main">
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="main.html" class="d-block" aria-label="國際化高階商務平台" title="國際化高階商務平台"></a>
+            </div>
+            <div class="search">
+                <label>
+                    <span class="icon-search"><img src="images/main/icon-search.svg"></span>
+                    <input type="text" name="txtKeyword" id="txtKeyword" class="srch-input" placeholder="輸入姓名/學校/公司/專長/興趣...等關鍵字搜尋人脈" autocomplete="off">
+                </label>
+            </div>
+            <div class="sch-mb"><a href="javascript:;" class="sch-mb__icon"><span class="txt">搜尋</span></a></div>
+            <div class="navtop">
+                <ul class="nav-link">
+                    <li><a href="#" class="nav-link__icon nav-link__icon--home"><span class="txt">首頁</span></a></li>
+                    <li><a href="#" class="nav-link__icon nav-link__icon--connection"><span class="txt">人脈</span></a></li>
+                    <li>
+                        <a href="#" class="nav-link__icon nav-link__icon--notify"><span class="txt">通知</span><b class="num">99+</b></a>
+                        <ul class="dropdown-menu lk-notification">
+                            <li>
+                                <div class="lk-scroller-notification">
+                                    <a href="#">
+                                        <div class="lk-notification-img" style="background-image: url(images/main/sample-headshot02.jpg);"></div>
+                                        <div class="lk-notification-info">
+                                            <span class="lk-notification-text">閱讀:2021上半年博客來暢銷商管書 Top 10!你讀過幾本?</span>
+                                            <span class="lk-notification-time">15小時前</span>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="lk-notification-img" style="background-image: url(images/main/sample-headshot06.jpg);"></div>
+                                        <div class="lk-notification-info">
+                                            <span class="lk-notification-text">新活動:疫情下壓力如山大，如何帶領團隊前進剖析</span>
+                                            <span class="lk-notification-time">2天</span>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="lk-notification-img" style="background-image: url(images/main/sample-headshot03.jpg);"></div>
+                                        <div class="lk-notification-info">
+                                            <span class="lk-notification-text">新課程:提升業務力!林導商學院-表達溝通成交術</span>
+                                            <span class="lk-notification-time">2天</span>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="lk-notification-img" style="background-image: url(images/main/sample-headshot04.jpg);"></div>
+                                        <div class="lk-notification-info">
+                                            <span class="lk-notification-text">張品旭傳送加人脈邀請給您</span>
+                                            <span class="lk-notification-time">6天</span>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="lk-notification-img" style="background-image: url(images/main/sample-headshot05.jpg);"></div>
+                                        <div class="lk-notification-info">
+                                            <span class="lk-notification-text">系統維設公告</span>
+                                            <span class="lk-notification-time">1週</span>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="lk-notification-img" style="background-image: url(images/main/sample-headshot02.jpg);"></div>
+                                        <div class="lk-notification-info">
+                                            <span class="lk-notification-text">閱讀:2021上半年博客來暢銷商管書 Top 10!你讀過幾本?</span>
+                                            <span class="lk-notification-time">15小時前</span>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="lk-notification-img" style="background-image: url(images/main/sample-headshot06.jpg);"></div>
+                                        <div class="lk-notification-info">
+                                            <span class="lk-notification-text">新活動:疫情下壓力如山大，如何帶領團隊前進剖析</span>
+                                            <span class="lk-notification-time">2天</span>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="lk-notification-img" style="background-image: url(images/main/sample-headshot03.jpg);"></div>
+                                        <div class="lk-notification-info">
+                                            <span class="lk-notification-text">新課程:提升業務力!林導商學院-表達溝通成交術</span>
+                                            <span class="lk-notification-time">2天</span>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="lk-notification-img" style="background-image: url(images/main/sample-headshot04.jpg);"></div>
+                                        <div class="lk-notification-info">
+                                            <span class="lk-notification-text">張品旭傳送加人脈邀請給您</span>
+                                            <span class="lk-notification-time">6天</span>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="lk-notification-img" style="background-image: url(images/main/sample-headshot05.jpg);"></div>
+                                        <div class="lk-notification-info">
+                                            <span class="lk-notification-text">系統維設公告</span>
+                                            <span class="lk-notification-time">1週</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="nav-link__icon nav-link__icon--activity"><span class="txt">活動</span></a></li>
+                    <li><a href="#" class="nav-link__icon nav-link__icon--course"><span class="txt">課程</span></a></li>
+                    <li><a href="#" class="nav-link__icon nav-link__icon--shoppingCart"><span class="txt">購物車</span><b class="num">3</b></a></li>
+                </ul>
+                <div class="member-function">
+                    <a href="#" class="headshot d-block"><img src="images/main/sample-headshot01.jpg" class="rounded-circle"><i class="fas fa-sort-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">個人專頁</a></li>
+                        <li><a href="#">會員設定</a></li>
+                        <li><a href="#">會員方案</a></li>
+                        <li><a href="#">報名紀錄</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a href="#">登出</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="lk-wrapper">
+        <div class="lk-left-sidebar">
+            <div class="sidebar-user">
+                <div class="mx-auto user-photo"><a href="#"><img src="images/main/sample-headshot01.jpg" class="rounded-circle"></a></div>
+                <h2 class="sidebar-user__name"><a href="#">陳行動</a></h2>
+                <a href="#" class="d-block"><img src="images/main/vip-member.svg" class="user-vip"></a>
+                <div class="eventBox d-flex">
+                    <div class="activity"><span><b>4</b>場活動</span></div>
+                    <div class="course"><span><b>30,000</b>元抵用券</span></div>
+                </div>
+            </div>
+            <div class="sidebar-activity widget">
+                <h3 class="widget-title">亮點活動</h3>
+                <ul>
+                    <li><a href="#">疫情下壓力如山大，如何帶領團隊前進？剖析2021下半年趨勢</a></li>
+                    <li><a href="#">當低利率成為「新常態」，究竟如何透過AI趨勢拉高投資勝率？</a></li>
+                    <li><a href="#">國際佈局策略及開放式創新等作法，增進業者洞察市場先機</a></li>
+                    <li><a href="#">[多元產業交流活動]－如何運用資源整合來行銷你的產業？</a></li>
+                </ul>
+                <a href="#" class="more">查看更多活動<i class="fas fa-caret-circle-right"></i></a>
+            </div>
+            <div class="sidebar-course widget">
+                <h3 class="widget-title">精選課程</h3>
+                <ul>
+                    <li><a href="#">提升業務力！林導商學院-表達溝通成交術</a></li>
+                    <li><a href="#">主管學！黃麗芬-門市經營與績效</a></li>
+                    <li><a href="#">協助企業打造全方位競爭人才 - 知名企業培訓推薦【卡內基】 </a></li>
+                    <li><a href="#">團隊溝通術 - 帶領百名不同國家員工的溝通實戰</a></li>
+                </ul>
+                <a href="#" class="more">查看更多課程<i class="fas fa-caret-circle-right"></i></a>
+            </div>
+        </div>
+        <main class="lk-content">
+            <div class="lk-content-main">
+                <div class="connection">
+                    <h3 class="title"><img src="images/main/icon-connection-grey.svg">我的人脈</h3>
+                    <div class="connection__silder">
+                        <div class="connection__silder--item">
+                            <a href="#"><span class="connection__silder--img"><img src="images/main/sample-headshot02.jpg"></span>陳語欣</a>
+                        </div>
+                        <div class="connection__silder--item">
+                            <a href="#"><span class="connection__silder--img"><img src="images/main/sample-headshot03.jpg"></span>董士方</a>
+                        </div>
+                        <div class="connection__silder--item">
+                            <a href="#"><span class="connection__silder--img"><img src="images/main/sample-headshot04.jpg"></span>吳棋峰</a>
+                        </div>
+                        <div class="connection__silder--item">
+                            <a href="#"><span class="connection__silder--img"><img src="images/main/sample-headshot05.jpg"></span>黃湘依</a>
+                        </div>
+                        <div class="connection__silder--item">
+                            <a href="#"><span class="connection__silder--img"><img src="images/main/sample-headshot06.jpg"></span>張品旭</a>
+                        </div>
+                        <div class="connection__silder--item">
+                            <a href="#"><span class="connection__silder--img"><img src="images/main/sample-headshot02.jpg"></span>陳語欣</a>
+                        </div>
+                        <div class="connection__silder--item">
+                            <a href="#"><span class="connection__silder--img"><img src="images/main/sample-headshot03.jpg"></span>董士方</a>
+                        </div>
+                        <div class="connection__silder--item">
+                            <a href="#"><span class="connection__silder--img"><img src="images/main/sample-headshot04.jpg"></span>吳棋峰</a>
+                        </div>
+                        <div class="connection__silder--item">
+                            <a href="#"><span class="connection__silder--img"><img src="images/main/sample-headshot05.jpg"></span>黃湘依</a>
+                        </div>
+                        <div class="connection__silder--item">
+                            <a href="#"><span class="connection__silder--img"><img src="images/main/sample-headshot06.jpg"></span>張品旭</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="topicality">
+                    <h3 class="title">時事話題</h3>
+                    <article class="topicality__card">
+                        <a href="#" class="d-flex">
+                            <h4 class="aritcleClass">產業資訊 > 車訊</h4>
+                            <div class="card__item">
+                                <div class="card__item--img"><img src="https://image.cache.storm.mg/styles/smg-600x400-fp/s3/media/image/2021/08/16/20210816-040451_U22661_M707267_bc84.jpg?itok=1-X4zgyn"></div>
+                                <div class="card__item--info">
+                                    <span class="titleA">中南部「月薪3萬都能買車」正常嗎？ 過來人曝關鍵：這情況很夠花了！</span>
+                                    <span class="desc">許多人出社會以後會選擇買車代步，不過「買車容易養車難」，買車後勢必多出一筆生活開銷。近日，有一名男網友表示，中南部許多30歲以內、月薪3萬多的人都有買車，讓他好奇的這是正常情況嗎？對此，不少人在留言串點出其中關鍵。</span>
+                                    <span class="date">2021-08-16</span>
+                                    <span class="author">編輯部</span>
+                                    <span class="viewMore">閱讀更多</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="topicality__card">
+                        <a href="#" class="d-flex">
+                            <h4 class="aritcleClass">新知學習 > 閱讀</h4>
+                            <div class="card__item">
+                                <div class="card__item--img"><img src="https://image.cache.storm.mg/styles/smg-800x533-fp/s3/media/image/2021/10/27/20211027-114019_U20554_M721842_e7d3.png?itok=cHxB9lNR"></div>
+                                <div class="card__item--info">
+                                    <span class="titleA">國旅券沒中沒關係！身分證末2碼對中這18組數字，每人入住飯店只要500元</span>
+                                    <span class="desc">這三週以來各部會的加碼券陸續抽出，幸運中籤的民眾想必非常開心，尤其是抽中最高面額1000元國旅券。不過沒中籤的朋友也別氣餒，國內有飯店業者為了讓這些「國旅邊緣人」一起同樂，也開出了許多自家優惠。其中承億文旅甚至開出18組號碼，只要身分證末2碼相符，就能以超低價999元入住標準雙人房，快來看看自己有沒有中獎！</span>
+                                    <span class="date">2021-10-27</span>
+                                    <span class="author">編輯部</span>
+                                    <span class="viewMore">閱讀更多</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="topicality__card">
+                        <a href="#" class="d-flex">
+                            <h4 class="aritcleClass">熱門焦點 > 生活</h4>
+                            <div class="card__item">
+                                <div class="card__item--img"><img src="https://image.cache.storm.mg/styles/smg-800x533-fp/s3/media/image/2021/10/29/20211029-053334_U8366_M722446_1568.jpg?itok=qp7iwITs"></div>
+                                <div class="card__item--info">
+                                    <span class="titleA">台灣百健響應19屆臺灣同志遊行 察覺無意識偏見 讓DE&I理念不落於口號</span>
+                                    <span class="desc">許多人出社會以後會選擇買車代步，不過「買車容易養車難」，買車後勢必多出一筆生活開銷。近日，有一名男網友表示，中南部許多30歲以內、月薪3萬多的人都有買車，讓他好奇的這是正常情況嗎？對此，不少人在留言串點出其中關鍵。</span>
+                                    <span class="date">2021-10-29</span>
+                                    <span class="author">編輯部</span>
+                                    <span class="viewMore">閱讀更多</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="topicality__card">
+                        <a href="#" class="d-flex">
+                            <h4 class="aritcleClass">產業資訊 > 科技</h4>
+                            <div class="card__item">
+                                <div class="card__item--img"><img src="https://image.cache.storm.mg/styles/smg-800x533-fp/s3/media/image/2020/01/09/20200109-020316_U17088_M584154_4f89.jpg?itok=wmIQNHDH"></div>
+                                <div class="card__item--info">
+                                    <span class="titleA">來杯人造咖啡？芬蘭研究大幅減碳，但喝起來較沒果香，也可能重傷農民生計！</span>
+                                    <span class="desc">印尼和肯亞等國生產的咖啡聞名世界，這一產業卻也涉及諸多環境問題，芬蘭科學家近期透過一項新技術，讓咖啡愛好者未來得以啜飲來自實驗室培養皿的「永續」咖啡。</span>
+                                    <span class="date">2021-10-28</span>
+                                    <span class="author">編輯部</span>
+                                    <span class="viewMore">閱讀更多</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="topicality__card">
+                        <a href="#" class="d-flex">
+                            <h4 class="aritcleClass">休閒娛樂 > 運動</h4>
+                            <div class="card__item">
+                                <div class="card__item--img"><img src="https://image.cache.storm.mg/styles/smg-800x533-fp-wm/s3/media/image/2021/07/15/20210715-045012_U18448_M701156_9bc6.JPG?itok=571FfAlE"></div>
+                                <div class="card__item--info">
+                                    <span class="titleA">健身房消費糾紛7個月爆1400件！消費者怎麼辦？新方案可請假延長契約，明年起上路</span>
+                                    <span class="desc">消保處今天表示，訂定健身教練服務與健身中心定型化契約規範，特別新增在疫情期間消費者可選擇「請假」停止繳費，並延長契約期間，避免業者因解除契約退款而無法營運的情況。</span>
+                                    <span class="date">2021-09-30</span>
+                                    <span class="author">編輯部</span>
+                                    <span class="viewMore">閱讀更多</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="topicality__card">
+                        <a href="#" class="d-flex">
+                            <h4 class="aritcleClass">產業資訊 > 車訊</h4>
+                            <div class="card__item">
+                                <div class="card__item--img"><img src="https://image.cache.storm.mg/styles/smg-600x400-fp/s3/media/image/2021/08/16/20210816-040451_U22661_M707267_bc84.jpg?itok=1-X4zgyn"></div>
+                                <div class="card__item--info">
+                                    <span class="titleA">中南部「月薪3萬都能買車」正常嗎？ 過來人曝關鍵：這情況很夠花了！</span>
+                                    <span class="desc">許多人出社會以後會選擇買車代步，不過「買車容易養車難」，買車後勢必多出一筆生活開銷。近日，有一名男網友表示，中南部許多30歲以內、月薪3萬多的人都有買車，讓他好奇的這是正常情況嗎？對此，不少人在留言串點出其中關鍵。</span>
+                                    <span class="date">2021-08-16</span>
+                                    <span class="author">編輯部</span>
+                                    <span class="viewMore">閱讀更多</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="topicality__card">
+                        <a href="#" class="d-flex">
+                            <h4 class="aritcleClass">新知學習 > 閱讀</h4>
+                            <div class="card__item">
+                                <div class="card__item--img"><img src="https://image.cache.storm.mg/styles/smg-800x533-fp/s3/media/image/2021/10/27/20211027-114019_U20554_M721842_e7d3.png?itok=cHxB9lNR"></div>
+                                <div class="card__item--info">
+                                    <span class="titleA">國旅券沒中沒關係！身分證末2碼對中這18組數字，每人入住飯店只要500元</span>
+                                    <span class="desc">這三週以來各部會的加碼券陸續抽出，幸運中籤的民眾想必非常開心，尤其是抽中最高面額1000元國旅券。不過沒中籤的朋友也別氣餒，國內有飯店業者為了讓這些「國旅邊緣人」一起同樂，也開出了許多自家優惠。其中承億文旅甚至開出18組號碼，只要身分證末2碼相符，就能以超低價999元入住標準雙人房，快來看看自己有沒有中獎！</span>
+                                    <span class="date">2021-10-27</span>
+                                    <span class="author">編輯部</span>
+                                    <span class="viewMore">閱讀更多</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="topicality__card">
+                        <a href="#" class="d-flex">
+                            <h4 class="aritcleClass">熱門焦點 > 生活</h4>
+                            <div class="card__item">
+                                <div class="card__item--img"><img src="https://image.cache.storm.mg/styles/smg-800x533-fp/s3/media/image/2021/10/29/20211029-053334_U8366_M722446_1568.jpg?itok=qp7iwITs"></div>
+                                <div class="card__item--info">
+                                    <span class="titleA">台灣百健響應19屆臺灣同志遊行 察覺無意識偏見 讓DE&I理念不落於口號</span>
+                                    <span class="desc">許多人出社會以後會選擇買車代步，不過「買車容易養車難」，買車後勢必多出一筆生活開銷。近日，有一名男網友表示，中南部許多30歲以內、月薪3萬多的人都有買車，讓他好奇的這是正常情況嗎？對此，不少人在留言串點出其中關鍵。</span>
+                                    <span class="date">2021-10-29</span>
+                                    <span class="author">編輯部</span>
+                                    <span class="viewMore">閱讀更多</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="topicality__card">
+                        <a href="#" class="d-flex">
+                            <h4 class="aritcleClass">產業資訊 > 科技</h4>
+                            <div class="card__item">
+                                <div class="card__item--img"><img src="https://image.cache.storm.mg/styles/smg-800x533-fp/s3/media/image/2020/01/09/20200109-020316_U17088_M584154_4f89.jpg?itok=wmIQNHDH"></div>
+                                <div class="card__item--info">
+                                    <span class="titleA">來杯人造咖啡？芬蘭研究大幅減碳，但喝起來較沒果香，也可能重傷農民生計！</span>
+                                    <span class="desc">印尼和肯亞等國生產的咖啡聞名世界，這一產業卻也涉及諸多環境問題，芬蘭科學家近期透過一項新技術，讓咖啡愛好者未來得以啜飲來自實驗室培養皿的「永續」咖啡。</span>
+                                    <span class="date">2021-10-28</span>
+                                    <span class="author">編輯部</span>
+                                    <span class="viewMore">閱讀更多</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="topicality__card">
+                        <a href="#" class="d-flex">
+                            <h4 class="aritcleClass">休閒娛樂 > 運動</h4>
+                            <div class="card__item">
+                                <div class="card__item--img"><img src="https://image.cache.storm.mg/styles/smg-800x533-fp-wm/s3/media/image/2021/07/15/20210715-045012_U18448_M701156_9bc6.JPG?itok=571FfAlE"></div>
+                                <div class="card__item--info">
+                                    <span class="titleA">健身房消費糾紛7個月爆1400件！消費者怎麼辦？新方案可請假延長契約，明年起上路</span>
+                                    <span class="desc">消保處今天表示，訂定健身教練服務與健身中心定型化契約規範，特別新增在疫情期間消費者可選擇「請假」停止繳費，並延長契約期間，避免業者因解除契約退款而無法營運的情況。</span>
+                                    <span class="date">2021-09-30</span>
+                                    <span class="author">編輯部</span>
+                                    <span class="viewMore">閱讀更多</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="topicality__card">
+                        <a href="#" class="d-flex">
+                            <h4 class="aritcleClass">產業資訊 > 車訊</h4>
+                            <div class="card__item">
+                                <div class="card__item--img"><img src="https://image.cache.storm.mg/styles/smg-600x400-fp/s3/media/image/2021/08/16/20210816-040451_U22661_M707267_bc84.jpg?itok=1-X4zgyn"></div>
+                                <div class="card__item--info">
+                                    <span class="titleA">中南部「月薪3萬都能買車」正常嗎？ 過來人曝關鍵：這情況很夠花了！</span>
+                                    <span class="desc">許多人出社會以後會選擇買車代步，不過「買車容易養車難」，買車後勢必多出一筆生活開銷。近日，有一名男網友表示，中南部許多30歲以內、月薪3萬多的人都有買車，讓他好奇的這是正常情況嗎？對此，不少人在留言串點出其中關鍵。</span>
+                                    <span class="date">2021-08-16</span>
+                                    <span class="author">編輯部</span>
+                                    <span class="viewMore">閱讀更多</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="topicality__card">
+                        <a href="#" class="d-flex">
+                            <h4 class="aritcleClass">新知學習 > 閱讀</h4>
+                            <div class="card__item">
+                                <div class="card__item--img"><img src="https://image.cache.storm.mg/styles/smg-800x533-fp/s3/media/image/2021/10/27/20211027-114019_U20554_M721842_e7d3.png?itok=cHxB9lNR"></div>
+                                <div class="card__item--info">
+                                    <span class="titleA">國旅券沒中沒關係！身分證末2碼對中這18組數字，每人入住飯店只要500元</span>
+                                    <span class="desc">這三週以來各部會的加碼券陸續抽出，幸運中籤的民眾想必非常開心，尤其是抽中最高面額1000元國旅券。不過沒中籤的朋友也別氣餒，國內有飯店業者為了讓這些「國旅邊緣人」一起同樂，也開出了許多自家優惠。其中承億文旅甚至開出18組號碼，只要身分證末2碼相符，就能以超低價999元入住標準雙人房，快來看看自己有沒有中獎！</span>
+                                    <span class="date">2021-10-27</span>
+                                    <span class="author">編輯部</span>
+                                    <span class="viewMore">閱讀更多</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="topicality__card">
+                        <a href="#" class="d-flex">
+                            <h4 class="aritcleClass">熱門焦點 > 生活</h4>
+                            <div class="card__item">
+                                <div class="card__item--img"><img src="https://image.cache.storm.mg/styles/smg-800x533-fp/s3/media/image/2021/10/29/20211029-053334_U8366_M722446_1568.jpg?itok=qp7iwITs"></div>
+                                <div class="card__item--info">
+                                    <span class="titleA">台灣百健響應19屆臺灣同志遊行 察覺無意識偏見 讓DE&I理念不落於口號</span>
+                                    <span class="desc">許多人出社會以後會選擇買車代步，不過「買車容易養車難」，買車後勢必多出一筆生活開銷。近日，有一名男網友表示，中南部許多30歲以內、月薪3萬多的人都有買車，讓他好奇的這是正常情況嗎？對此，不少人在留言串點出其中關鍵。</span>
+                                    <span class="date">2021-10-29</span>
+                                    <span class="author">編輯部</span>
+                                    <span class="viewMore">閱讀更多</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="topicality__card">
+                        <a href="#" class="d-flex">
+                            <h4 class="aritcleClass">產業資訊 > 科技</h4>
+                            <div class="card__item">
+                                <div class="card__item--img"><img src="https://image.cache.storm.mg/styles/smg-800x533-fp/s3/media/image/2020/01/09/20200109-020316_U17088_M584154_4f89.jpg?itok=wmIQNHDH"></div>
+                                <div class="card__item--info">
+                                    <span class="titleA">來杯人造咖啡？芬蘭研究大幅減碳，但喝起來較沒果香，也可能重傷農民生計！</span>
+                                    <span class="desc">印尼和肯亞等國生產的咖啡聞名世界，這一產業卻也涉及諸多環境問題，芬蘭科學家近期透過一項新技術，讓咖啡愛好者未來得以啜飲來自實驗室培養皿的「永續」咖啡。</span>
+                                    <span class="date">2021-10-28</span>
+                                    <span class="author">編輯部</span>
+                                    <span class="viewMore">閱讀更多</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="topicality__card">
+                        <a href="#" class="d-flex">
+                            <h4 class="aritcleClass">休閒娛樂 > 運動</h4>
+                            <div class="card__item">
+                                <div class="card__item--img"><img src="https://image.cache.storm.mg/styles/smg-800x533-fp-wm/s3/media/image/2021/07/15/20210715-045012_U18448_M701156_9bc6.JPG?itok=571FfAlE"></div>
+                                <div class="card__item--info">
+                                    <span class="titleA">健身房消費糾紛7個月爆1400件！消費者怎麼辦？新方案可請假延長契約，明年起上路</span>
+                                    <span class="desc">消保處今天表示，訂定健身教練服務與健身中心定型化契約規範，特別新增在疫情期間消費者可選擇「請假」停止繳費，並延長契約期間，避免業者因解除契約退款而無法營運的情況。</span>
+                                    <span class="date">2021-09-30</span>
+                                    <span class="author">編輯部</span>
+                                    <span class="viewMore">閱讀更多</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="topicality__card">
+                        <a href="#" class="d-flex">
+                            <h4 class="aritcleClass">產業資訊 > 車訊</h4>
+                            <div class="card__item">
+                                <div class="card__item--img"><img src="https://image.cache.storm.mg/styles/smg-600x400-fp/s3/media/image/2021/08/16/20210816-040451_U22661_M707267_bc84.jpg?itok=1-X4zgyn"></div>
+                                <div class="card__item--info">
+                                    <span class="titleA">中南部「月薪3萬都能買車」正常嗎？ 過來人曝關鍵：這情況很夠花了！</span>
+                                    <span class="desc">許多人出社會以後會選擇買車代步，不過「買車容易養車難」，買車後勢必多出一筆生活開銷。近日，有一名男網友表示，中南部許多30歲以內、月薪3萬多的人都有買車，讓他好奇的這是正常情況嗎？對此，不少人在留言串點出其中關鍵。</span>
+                                    <span class="date">2021-08-16</span>
+                                    <span class="author">編輯部</span>
+                                    <span class="viewMore">閱讀更多</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="topicality__card">
+                        <a href="#" class="d-flex">
+                            <h4 class="aritcleClass">新知學習 > 閱讀</h4>
+                            <div class="card__item">
+                                <div class="card__item--img"><img src="https://image.cache.storm.mg/styles/smg-800x533-fp/s3/media/image/2021/10/27/20211027-114019_U20554_M721842_e7d3.png?itok=cHxB9lNR"></div>
+                                <div class="card__item--info">
+                                    <span class="titleA">國旅券沒中沒關係！身分證末2碼對中這18組數字，每人入住飯店只要500元</span>
+                                    <span class="desc">這三週以來各部會的加碼券陸續抽出，幸運中籤的民眾想必非常開心，尤其是抽中最高面額1000元國旅券。不過沒中籤的朋友也別氣餒，國內有飯店業者為了讓這些「國旅邊緣人」一起同樂，也開出了許多自家優惠。其中承億文旅甚至開出18組號碼，只要身分證末2碼相符，就能以超低價999元入住標準雙人房，快來看看自己有沒有中獎！</span>
+                                    <span class="date">2021-10-27</span>
+                                    <span class="author">編輯部</span>
+                                    <span class="viewMore">閱讀更多</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="topicality__card">
+                        <a href="#" class="d-flex">
+                            <h4 class="aritcleClass">熱門焦點 > 生活</h4>
+                            <div class="card__item">
+                                <div class="card__item--img"><img src="https://image.cache.storm.mg/styles/smg-800x533-fp/s3/media/image/2021/10/29/20211029-053334_U8366_M722446_1568.jpg?itok=qp7iwITs"></div>
+                                <div class="card__item--info">
+                                    <span class="titleA">台灣百健響應19屆臺灣同志遊行 察覺無意識偏見 讓DE&I理念不落於口號</span>
+                                    <span class="desc">許多人出社會以後會選擇買車代步，不過「買車容易養車難」，買車後勢必多出一筆生活開銷。近日，有一名男網友表示，中南部許多30歲以內、月薪3萬多的人都有買車，讓他好奇的這是正常情況嗎？對此，不少人在留言串點出其中關鍵。</span>
+                                    <span class="date">2021-10-29</span>
+                                    <span class="author">編輯部</span>
+                                    <span class="viewMore">閱讀更多</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="topicality__card">
+                        <a href="#" class="d-flex">
+                            <h4 class="aritcleClass">產業資訊 > 科技</h4>
+                            <div class="card__item">
+                                <div class="card__item--img"><img src="https://image.cache.storm.mg/styles/smg-800x533-fp/s3/media/image/2020/01/09/20200109-020316_U17088_M584154_4f89.jpg?itok=wmIQNHDH"></div>
+                                <div class="card__item--info">
+                                    <span class="titleA">來杯人造咖啡？芬蘭研究大幅減碳，但喝起來較沒果香，也可能重傷農民生計！</span>
+                                    <span class="desc">印尼和肯亞等國生產的咖啡聞名世界，這一產業卻也涉及諸多環境問題，芬蘭科學家近期透過一項新技術，讓咖啡愛好者未來得以啜飲來自實驗室培養皿的「永續」咖啡。</span>
+                                    <span class="date">2021-10-28</span>
+                                    <span class="author">編輯部</span>
+                                    <span class="viewMore">閱讀更多</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="topicality__card">
+                        <a href="#" class="d-flex">
+                            <h4 class="aritcleClass">休閒娛樂 > 運動</h4>
+                            <div class="card__item">
+                                <div class="card__item--img"><img src="https://image.cache.storm.mg/styles/smg-800x533-fp-wm/s3/media/image/2021/07/15/20210715-045012_U18448_M701156_9bc6.JPG?itok=571FfAlE"></div>
+                                <div class="card__item--info">
+                                    <span class="titleA">健身房消費糾紛7個月爆1400件！消費者怎麼辦？新方案可請假延長契約，明年起上路</span>
+                                    <span class="desc">消保處今天表示，訂定健身教練服務與健身中心定型化契約規範，特別新增在疫情期間消費者可選擇「請假」停止繳費，並延長契約期間，避免業者因解除契約退款而無法營運的情況。</span>
+                                    <span class="date">2021-09-30</span>
+                                    <span class="author">編輯部</span>
+                                    <span class="viewMore">閱讀更多</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <div class="topicality__card--more"><a href="#">顯示更多</a></div>
+                </div>
+            </div>
+            <div class="lk-content-aside">
+                <div class="recommend-connection">
+                    <div class="rc-header">
+                        <h3 class="tithe">推薦人脈</h3><a href="#">查看全部</a>
+                    </div>
+                    <div class="rc-slider">
+                        <div class="rc-slider__item">
+                            <a href="#">
+                                <span class="photo"><img src="images/main/sample-headshot07.jpg"></span>
+                                <span class="name" aria-label="郭台銘"><b>鴻海科技集團創辦人</b></span>
+                            </a>
+                        </div>
+                        <div class="rc-slider__item">
+                            <a href="#">
+                                <span class="photo"><img src="images/main/sample-headshot02.jpg"></span>
+                                <span class="name" aria-label="洪穗婷"><b>山葵組股份有限公司 Front Engineer</b></span>
+                            </a>
+                        </div>
+                        <div class="rc-slider__item">
+                            <a href="#">
+                                <span class="photo"><img src="images/main/sample-headshot04.jpg"></span>
+                                <span class="name" aria-label="巫嘉偉"><b>(Fubon) momo.com Inc. 富邦媒體科技 網頁設計師</b></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="advertise">
+                    <a href="#"><img src="images/main/sample-ad01.jpg"></a>
+                    <a href="#"><img src="images/main/sample-ad02.jpg"></a>
+                    <a href="#"><img src="images/main/sample-ad03.jpg"></a>
+                    <a href="#"><img src="images/main/sample-ad04.jpg"></a>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!--footer-->
+    <script src="js/footer.js"></script>
+    <!--base js-->
+    <script src="js/jquery-2.0.0.min.js"></script>
+    <!--vendors js-->
+    <script src="vendors/slick/slick.js"></script>
+    <script src="vendors/perfectScrollbar/perfect-scrollbar.js"></script>
+    <!--main_custom js-->
+    <script src="js/main_custom.js"></script>
+    <script>
+    new PerfectScrollbar('.lk-scroller-notification');
+    new PerfectScrollbar('.topicality');
+    new PerfectScrollbar('.advertise', {
+        useBothWheelAxes: true,
+    });
+    </script>
+</body>
+
+</html>

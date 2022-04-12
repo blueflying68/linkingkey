@@ -1,0 +1,319 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>國際化高階商務平台</title>
+    <!--Web default meta-->
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <!--base css-->
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/animate_min.css" rel="stylesheet" />
+    <link href="sass/modules/_base.css" rel="stylesheet" />
+    <!--font icon css-->
+    <link href="vendors/fontawesome/css/fontawesome-pro-all.css" rel="stylesheet" />
+    <link href="vendors/fontawesome/css/fontawesome-pro-web.css" rel="stylesheet" />
+    <!--vendors css-->
+    <link href="vendors/slick/slick.css" rel="stylesheet" />
+    <link href="vendors/perfectScrollbar/perfect-scrollbar.css" rel="stylesheet" />
+    <!--page css-->
+    <link href="sass/page/footer.css" rel="stylesheet" />
+    <link href="sass/page/mainHeader.css" rel="stylesheet" />
+    <link href="sass/page/main_pageStyle.css" rel="stylesheet" />
+</head>
+
+<body id="page-checkout">
+    <!-- main header -->
+    <script src="js/main_header.js"></script>
+    <div class="lk-checkout-wrap">
+        <div class="checkout-content">
+            <div class="container">
+                <div class="lk-flex">
+                    <div class="checkout-box">
+                        <div class="intro-shadow">
+                            <ul class="checkout-step">
+                                <li><img src="images/main/icon-checkout-step1_1.svg"><span>選擇報名方案</span></li>
+                                <li class="setp-ok"><img src="images/main/icon-checkout-step2_1.svg"><span>填寫報名資料</span></li>
+                                <li><img src="images/main/icon-checkout-step3.svg"><span>確認付款資訊</span></li>
+                            </ul>
+                            <div class="apply-activity-list apply-list">
+                                <h4><span>報名活動資料</span></h4>
+                                <div class="apply-form-box">
+                                    <div class="activ-ttl">當低利率成為「新常態」，究竟該如何透過AI趨勢拉高投資勝率？</div>
+                                    <div class="apply-form__field">
+                                        <h5>1-會員貴賓</h5>
+                                        <div class="apply-form__group">
+                                            <label class="form-label required">姓名</label>
+                                            <div class="form-input">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="apply-form__group">
+                                            <label class="form-label required">電子郵件</label>
+                                            <div class="form-input">
+                                                <input type="email" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="apply-form__group">
+                                            <label class="form-label required">行動電話</label>
+                                            <div class="form-input">
+                                                <input type="phone" class="form-control" pattern="09[0-9]{8}">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="apply-form__field">
+                                        <h5>2-一般貴賓</h5>
+                                        <div class="apply-form__group">
+                                            <label class="form-label required">姓名</label>
+                                            <div class="form-input">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="apply-form__group">
+                                            <label class="form-label required">電子郵件</label>
+                                            <div class="form-input">
+                                                <input type="email" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="apply-form__group">
+                                            <label class="form-label required">行動電話</label>
+                                            <div class="form-input">
+                                                <input type="phone" class="form-control" pattern="09[0-9]{8}">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="apply-course-list apply-list">
+                                <h4><span>報名課程資料</span></h4>
+                                <div class="apply-form__field">
+                                    <div class="apply-form__group">
+                                        <label class="form-label required">姓名</label>
+                                        <div class="form-input">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="apply-form__group">
+                                        <label class="form-label required">電子郵件</label>
+                                        <div class="form-input">
+                                            <input type="email" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="apply-form__group">
+                                        <label class="form-label required">行動電話</label>
+                                        <div class="form-input">
+                                            <input type="phone" class="form-control" pattern="09[0-9]{8}">
+                                        </div>
+                                    </div>
+                                    <div class="apply-form__group">
+                                        <label class="form-label required">寄送地址</label>
+                                        <div class="form-input">
+                                            <input type="text" class="form-control postalCode" placeholder="郵遞區號">
+                                            <select class="form-select">
+                                                <option selected="">縣市</option>
+                                                <option value="c1">基隆市</option>
+                                                <option value="c2">台北市</option>
+                                                <option value="c3">新北市</option>
+                                                <option value="c4">桃園市</option>
+                                                <option value="c5">新竹市</option>
+                                            </select>
+                                            <select class="form-select">
+                                                <option selected="">鄉鎮市區</option>
+                                                <option value="a1">中正區</option>
+                                                <option value="a2">大同區</option>
+                                                <option value="a3">中山區</option>
+                                                <option value="a4">松山區</option>
+                                                <option value="a5">大安區</option>
+                                            </select>
+                                            <input type="text" class="form-control address">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="apply-list apply-invoice-list">
+                                <h4><span>發票資料</span></h4>
+                                <div class="apply-form__field">
+                                    <div class="apply-form__group">
+                                        <legend class="form-label required">發票資訊</legend>
+                                        <div class="form-input">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="invoice" id="invoice2">
+                                                <label class="form-check-label" for="invoice2">二聯式發票</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="invoice" id="invoice3">
+                                                <label class="form-check-label" for="invoice3">三聯式發票</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="invoice-select">
+                                        <div class="apply-form__field invoice-select__card1">
+                                            <div class="apply-form__group">
+                                                <label class="form-label required">發票載具</label>
+                                                <div class="form-input">
+                                                    <select class="form-select certificate">
+                                                        <option value="0">無</option>
+                                                        <option value="1">手機條碼</option>
+                                                        <option value="2">自然人憑證</option>
+                                                        <option value="3">悠遊卡</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="apply-form__field invoice-select__card2">
+                                            <div class="apply-form__group">
+                                                <label class="form-label">統一編號</label>
+                                                <div class="form-input">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="apply-form__group">
+                                                <label class="form-label">公司名稱</label>
+                                                <div class="form-input">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="apply-list apply-payment-list">
+                                <h4><span>付款資料</span></h4>
+                                <div class="apply-form__field">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="payment" id="payment1">
+                                        <label class="form-check-label" for="payment1">統一超商7-ELEVEN ibon 繳費</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="payment" id="payment2">
+                                        <label class="form-check-label" for="payment2">全家便利商店FamiPort 繳費</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="payment" id="payment3">
+                                        <label class="form-check-label" for="payment3">Web ATM 轉帳</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="payment" id="payment4">
+                                        <label class="form-check-label" for="payment4">信用卡/銀聯卡線上刷卡<span>(紅陽科技金流系統代收)</span></label>
+                                    </div>
+                                    <div class="payment-radio__info creditCard">
+                                        <div class="apply-form__field">
+                                            持卡人非會員本人時，請填持卡人姓名<input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="payment" id="payment5">
+                                        <label class="form-check-label" for="payment5">分期付款6期零利率<span>(限6,000元以上，24小時內將以簡訊通知)</span></label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="payment" id="payment6">
+                                        <label class="form-check-label" for="payment6">匯款或ATM轉帳</label>
+                                    </div>
+                                    <div class="payment-radio__info transfer">
+                                        <ul>
+                                            <li>銀行名稱：玉山銀行東台南分行</li>
+                                            <li>銀行代碼：808</li>
+                                            <li>轉帳帳號：0761-9400-0923-6</li>
+                                            <li>戶名：行動學習科技股份有限公司</li>
+                                        </ul>
+                                        <div class="apply-form__field">
+                                            <div class="apply-form__group">
+                                                <label class="form-label">匯款姓名</label>
+                                                <div class="form-input">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="apply-form__group">
+                                                <label class="form-label">帳號後五碼</label>
+                                                <div class="form-input">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkout-sidebar">
+                        <div class="lkfix">
+                            <div class="intro-shadow">
+                                <div class="order-details">
+                                    <h4><img src="images/main/icon-order-details.svg">訂單明細</h4>
+                                    <div class="apply-project">
+                                        <div class="apply-project__title">
+                                            <h5>報名項目<span>(3)</span></h5>
+                                            <button class="btn-toggle-project">展開<i class="fas fa-chevron-down"></i></button>
+                                        </div>
+                                        <ul>
+                                            <li><b>1</b>場活動</li>
+                                            <li><b>2</b>門課程</li>
+                                        </ul>
+                                    </div>
+                                    <div class="apply-inventory">
+                                        <div class="apply-inventory__item activity">
+                                            <div class="item-box">
+                                                <span class="tags">活動1</span>
+                                                <span class="title">當低利率成為「新常態」，究竟該如何透過AI趨勢拉高投資勝率？</span>
+                                            </div>
+                                            <div class="item-box">
+                                                <span class="num">2位</span>
+                                                <span class="price">NT$<b>800</b></span>
+                                            </div>
+                                        </div>
+                                        <div class="apply-inventory__item course">
+                                            <div class="item-box">
+                                                <span class="tags">課程1</span>
+                                                <span class="title">職場溝通致勝秘訣</span>
+                                            </div>
+                                            <div class="item-box">
+                                                <span class="price">NT$<b>1800</b></span>
+                                            </div>
+                                        </div>
+                                        <div class="apply-inventory__item course">
+                                            <div class="item-box">
+                                                <span class="tags">課程2</span>
+                                                <span class="title">數據時代NES客戶分類管理</span>
+                                            </div>
+                                            <div class="item-box">
+                                                <span class="price">NT$<b>2500</b></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="subtotal">小計
+                                        <div class="subtotal-project">
+                                            <span>NT$<b>5100</b></span>
+                                            <span>-NT$<b>1500</b></span>
+                                        </div>
+                                    </div>
+                                    <div class="total">訂單總額<span>NT$<b>3600</b></span></div>
+                                    <div class="btn-next-step"><a href="#">確認付款</a></div>
+                                    <div class="payment-note">點擊上方確認付款按鈕即表示您已閱讀並同意本站<a href="#">報名須知條款</a>。</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <script src="js/footer.js"></script>
+    <!--base js-->
+    <script src="js/jquery-2.0.0.min.js"></script>
+    <!--vendors js-->
+    <script src="vendors/slick/slick.js"></script>
+    <script src="vendors/perfectScrollbar/perfect-scrollbar.js"></script>
+    <!--main_custom js-->
+    <script src="js/main_custom.js"></script>
+    <script>
+    new PerfectScrollbar('.lk-scroller-notification');
+    </script>
+</body>
+
+</html>
